@@ -17,6 +17,7 @@ func handler(m interface{}, h interface{}) {
 }
 
 func handleHello(args []interface{}) {
+	log.Debug("hello")
 	// 收到的 Hello 消息
 	m := args[0].(*msg.Hello)
 	// 消息的发送者
